@@ -20,3 +20,5 @@ RUN set -ex ;\
     cd /tmp/wrk2 ;\
     make ;\
     mv wrk /usr/bin/
+
+ENTRYPOINT [ "wrk" ]
