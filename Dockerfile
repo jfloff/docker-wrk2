@@ -12,7 +12,9 @@ RUN set -ex ;\
         ca-certificates \
         libssl-dev \
         libz-dev \
-        git ;\
+        git \
+        luarocks \
+        ;\
     rm -rf /var/lib/apt/lists/*
 
 RUN set -ex ;\
