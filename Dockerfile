@@ -1,11 +1,6 @@
 FROM debian:11-slim
 
 RUN set -ex ;\
-  apt-get update ;\
-  apt-get install -y --no-install-recommends ${BUILD_DEPS} ;\
-  rm -rf /var/lib/apt/lists/*
-
-RUN set -ex ;\
     apt-get update ;\
     apt-get install -y --no-install-recommends \
         build-essential \
